@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "park-attention"
+version = "0.1.0"
+description = "JAX implementation of PARK block retrieval (arXiv:2609.38978)"
+requires-python = ">=3.11"
+dependencies = ["jax", "jaxlib"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
